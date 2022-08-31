@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import MovieCard from "../components/MovieCard/";
 
 // Importando as chaves do arquivo .env
 const moviesURL = import.meta.env.VITE_API
@@ -26,9 +27,16 @@ const Home = () => {
     },[])
 
     return(
-        <div>
+        <div className="container">
+            <h2 className="title">Melhores filmes:</h2>
+
+            <div className="movies-container">
+            {/* Se o array estiver vazio */}
+            {topMovies.length === 0 && <p>Carregando...</p>}
+            
             {/* Se os topmovies estiverem preenchidos, percorrer por todos os itens */}
-            {topMovies && topMovies.map((movie) => <p>{movie.title}</p>)}
+            {topMovies.length>0 && topMovies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
+            </div>
         </div>
     )
 }

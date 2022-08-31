@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import {BiCameraMovie, BiSearchAlt2} from 'react-icons/bi'
 // import { Container } from './styles';
 
-function navbar() {
+function Navbar() {
   return(
     <nav id="navbar">
         <h2>
@@ -20,4 +20,4 @@ function navbar() {
   );
 }
 
-export default navbar;
+export default Navbar;
