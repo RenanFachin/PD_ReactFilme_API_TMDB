@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import {BiCameraMovie, BiSearchAlt2} from 'react-icons/bi'
 // import { Container } from './styles';
+import "./styles.css"
 
 function Navbar() {
   return(
