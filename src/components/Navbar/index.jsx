@@ -14,7 +14,12 @@ function Navbar() {
   const handleSubmit = (e) => {
     // Fazendo o forms não fazer o submit em padrão http
     e.preventDefault()
-    console.log(search)
+
+    // Se o usuário fizer uma busca com o campo vazio. Nada vai acontecer
+    if(!search) return;
+
+    navigate(`/search?q=${search}`)
+    setSearch("")
   }
 
   return(
