@@ -46,6 +46,13 @@ VITE_API=https://api.themoviedb.org/3/movie/
 VITE_SEARCH=https://api.themoviedb.org/3/search/movies/
 VITE_IMG=https://image.tmdb.org/t/p/w500/
 ```
+
+Rodando o projeto
+
+```bash
+  npm run dev
+```
+
 ## Melhorias Para o futuro
 
 - [ ]   Melhorias no layout
